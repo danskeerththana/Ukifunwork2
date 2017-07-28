@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dance office</title>
+
+  <script src="app/public/js/jquery-3.2.1.js"></script>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+
+
+*{
+margin:0;
+padding:0;
+}
+body{
+font-family:arial,sans-serif;
+font-size:100%;
+margin-top: 3em;
+
+  background-image: url("/app/views/l.jpeg");
+   background-size: 1400px 800px;
+color:#fff;
+}
+h2,p{
+font-size:100%;
+font-weight:normal;
+}
+ul,li{
+list-style:none;
+}
+ul{
+overflow:hidden;
+padding:3em;
+margin-left: 20em;
+}
+ul li a{
+text-decoration:none;
+color:#000;
+background:#ff3399;
+display:block;
+height:12em;
+width:30em;
+padding:1em;
+-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+-moz-transition:-moz-transform .15s linear;
+-o-transition:-o-transform .15s linear;
+-webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+margin:1em;
+float:left;
+}
+ul li h2{
+font-size:140%;
+font-weight:bold;
+padding-bottom:10px;
+}
+ul li p{
+font-family:"Reenie Beanie",arial,sans-serif;
+font-size:180%;
+}
+ul li a{
+-webkit-transform: rotate(-6deg);
+-o-transform: rotate(-6deg);
+-moz-transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+-o-transform:rotate(4deg);
+-webkit-transform:rotate(4deg);
+-moz-transform:rotate(4deg);
+position:relative;
+top:5px;
+background:#ff3399;
+}
+ul li:nth-child(3n) a{
+-o-transform:rotate(-3deg);
+-webkit-transform:rotate(-3deg);
+-moz-transform:rotate(-3deg);
+position:relative;
+top:-5px;
+background:#ff3399s;
+}
+ul li:nth-child(5n) a{
+-o-transform:rotate(5deg);
+-webkit-transform:rotate(5deg);
+-moz-transform:rotate(5deg);
+position:relative;
+top:-10px;
+}
+ul li a:hover,ul li a:focus{
+box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+-webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+-webkit-transform: scale(1.25);
+-moz-transform: scale(1.25);
+-o-transform: scale(1.25);
+position:relative;
+z-index:5;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#ff3399;}
+
+Rerun
+
+</style>
+  <style>
+    input[type='submit'], button, [aria-label]{
+      cursor: pointer;
+    }
+    #spoiler{
+      display: none;
+    }
+  </style>
+
+</head>
+<body background="/app/views/a.jpeg">
+<style>
+h1 {
+    background-image: url("/app/views/i.jpeg");
+}
+</style>
+  <h1> <center>Dance Office Account</center></h1><br>
+ <ul>
+   <li>
+       <a href="#">
+          <h3>Dance office</h3>
+
+<form action="javascript:void(0);" method="POST" onsubmit="addNote()">
+  <input type="text" id="add-title" placeholder="Name">
+  <input type="text" id="add-body" placeholder="Number">
+  <input type="submit" value="Add">
+</form>
+
+<div id="spoiler" role="aria-hidden">
+  <form action="javascript:void(0);" method="POST" onsubmit="saveEdit()">
+    <input type="text" id="edit-title">
+    <input type="text" id="edit-body">
+    <input type="submit" value="Edit">
+  </form>
+</div>
+
+<table>
+  <!-- <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Text</th>
+  </tr> -->
+
+    <tbody id="notes">
+    </tbody>
+</table>
+</a>
+<!-- <script src="app/public/js/script1.js"></script> -->
+<script src="app/public/js/script2.js"></script>
+<!-- <script src="app/public/js/script3.js"></script> -->
+</body>
+</html>
